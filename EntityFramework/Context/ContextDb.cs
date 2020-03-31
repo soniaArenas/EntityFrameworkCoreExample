@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EntityFramework.Context
 {
-    public class ContextDb : DbContext
+    public class ContextDb : DbContext, IContextDb
     {
         public ContextDb(DbContextOptions<ContextDb> options) : base(options)
         {
